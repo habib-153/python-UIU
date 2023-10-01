@@ -1,0 +1,6 @@
+# name = str(input())
+# age = int(input())
+# print(f"Hello! My name is {name} and I am {age} years old")
+n=input("Enter your name: ")
+a=input("Enter your age: ")
+print("Hello! My name is " + n + " and I am "+ a +" years old")
