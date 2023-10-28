@@ -24,16 +24,18 @@
 
 
     # N = int(input())
-    # # Initialize a variable to store the sum
+    #     # Initialize a variable to store the sum
     # sum = 0
-    # # Loop from 1 to N
+    #     # Loop from 1 to N
     # for i in range(1, N + 1):
-    #     # Calculate the term at each index
+    #     # using formula....
     #     term = i * (-1) ** i
-    #     # Add the term to the sum
+    #         # Add the term to the sum
+    #     # print(term)
     #     sum += term
-    # # Print the sum
+    #     # Print the sum
     # print(sum)
+    # # print(term)
 
 
 # num = int(input())
