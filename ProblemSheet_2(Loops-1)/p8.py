@@ -9,8 +9,9 @@ for i in j_numbers:
     else:
         not_dupli.append(i)
 if duplicate:
+    print("Duplicate jersey numbers: ", end="")
     for j in duplicate:
-        print(f"Duplicate jersey numbers: {j}", end=" ")
+        print(j, end=" ")
     print()
 else:
     print("No duplicate")
