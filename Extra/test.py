@@ -38,7 +38,7 @@
     # # print(term)
 
 
-# num = int(input())
+# num = int (input())
 # if(num+1)%2 == 1:
 #     index_value = num+1
 # else:
