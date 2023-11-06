@@ -70,3 +70,11 @@
 #    else:
 #         print(word[i], end=',')
 #         i=i+1
+
+# not print coma after last element
+n = 5
+lst = []
+while n<= 100:
+    lst.append(str(n))
+    n+=10
+print(",".join(lst))
