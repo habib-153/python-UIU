@@ -44,3 +44,29 @@
 # else:
 #     index_value = -(num+1)
 # print(index_value)
+
+# start = int(input())
+# end = int(input())
+# list =[]
+# for i in range(start, end+1):
+#     if i%2 == 0:
+#         list.append(i)
+# print(list)
+
+# x=0
+# for i in range(1,4):
+#     for j in range(1,4):
+#         x+=i
+#         if x>j:
+#             continue
+#         print(f"{i} {j}")
+
+# word="I Love Bangladesh"
+# i=0
+# while i<len(word):
+#    if word[i].lower()=='l'.lower() or word[i].lower()=='o'.lower():
+#         i=i+1
+#         continue
+#    else:
+#         print(word[i], end=',')
+#         i=i+1
