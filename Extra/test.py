@@ -21,7 +21,7 @@
 # sorted_motor = [sorted (x, key=str) if isinstance (x, list) else x for x in motor]
 # sorted_motor = sorted (sorted_motor, key=str)
 # print(sorted_motor)
-
+# ---------------------------------------------------------
 
     # N = int(input())
     #     # Initialize a variable to store the sum
@@ -37,13 +37,14 @@
     # print(sum)
     # # print(term)
 
-
+# -------------------------------------------------------
 # num = int (input())
 # if(num+1)%2 == 1:
 #     index_value = num+1
 # else:
 #     index_value = -(num+1)
 # print(index_value)
+# -------------------------------------------------------
 
 # start = int(input())
 # end = int(input())
@@ -52,7 +53,7 @@
 #     if i%2 == 0:
 #         list.append(i)
 # print(list)
-
+# -------------------------------------------------------
 # x=0
 # for i in range(1,4):
 #     for j in range(1,4):
@@ -60,7 +61,7 @@
 #         if x>j:
 #             continue
 #         print(f"{i} {j}")
-
+# --------------------------------------------------------------
 # word="I Love Bangladesh"
 # i=0
 # while i<len(word):
@@ -70,11 +71,25 @@
 #    else:
 #         print(word[i], end=',')
 #         i=i+1
-
+# ----------------------------------------------------
 # not print coma after last element
-n = 5
-lst = []
-while n<= 100:
-    lst.append(str(n))
-    n+=10
-print(",".join(lst))
+# n = 5
+# lst = []
+# while n<= 100:
+#     lst.append(str(n))
+#     n+=10
+# print(",".join(lst))
+# -------------------------------------------------------
+
+# palindrome
+    # input_str = input()
+
+    # reversed_str = "".join(reversed(input_str))
+    # # print(input_str)
+    # # print(reversed_str)
+    # if input_str.lower() == reversed_str.lower():
+    #     print("palindrome")
+    # else:
+    #     print("not palindrome")
+
+# -----------------------------------------------------
