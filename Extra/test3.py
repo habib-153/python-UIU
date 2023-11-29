@@ -44,20 +44,33 @@
 # =========================================================
 # PhoneBook
 
-PhoneBook = {
-    'Amit' :{
-        'NickName' : 'Datto',
-        'Age' : 22,
-        'City' : 'Dhaka'
-    },
-    'Mahera': {
-        'Name': {
-            'First_Name' : 'Mahera',
-            'Last_Name' : 'Rezwan'
-        },
-        'Age': 24,
-        'City': 'Rajshahi'
-    }
-}
+    # PhoneBook = {
+    #     'Amit' :{
+    #         'NickName' : 'Datto',
+    #         'Age' : 22,
+    #         'City' : 'Dhaka'
+    #     },
+    #     'Mahera': {
+    #         'Name': {
+    #             'First_Name' : 'Mahera',
+    #             'Last_Name' : 'Rezwan'
+    #         },
+    #         'Age': 24,
+    #         'City': 'Rajshahi'
+    #     }
+    # }
 
-print(PhoneBook)
+    # print(PhoneBook)
+
+# ==========================================
+
+lstCoun = ["Bangladesh", "India", "Pakistan", "Srilanka", "Afganisthan"]
+lstCap = ["Dhaka", "Delhi", "Islamabad" , "Colombo"]
+
+country = input()
+
+for c in lstCoun:
+    if(c == country):
+        cap = lstCap[lstCoun.index(c)]
+        print(cap)
+        break
