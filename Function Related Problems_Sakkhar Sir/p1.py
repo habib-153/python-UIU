@@ -1,5 +1,5 @@
 def message(m):
     print(m)
 
-input_message = input()
+input_message = "This is a function"
 message(input_message)
