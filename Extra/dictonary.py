@@ -49,17 +49,27 @@ course = [
 
 # ========================================================
 
-    # tracks = {
-    #     "software": ["Project management", "SystemAnalysis", "Software Engg", "Web programming"],
-    #     "iot": ["Cloud computing", "Green computing",
-    #             "robotics", "Sensor network"],
-    #     "hardware": ["Computer Architecture", "DLD",
-    #                  "Microprocessor and Microcontroller",
-    #                  "Interfacing"]
-    # }
+# tracks = {
+#     "software": ["Project management", "SystemAnalysis", "Software Engg", "Web programming"],
+#     "iot": ["Cloud computing", "Green computing",
+#             "robotics", "Sensor network"],
+#     "hardware": ["Computer Architecture", "DLD",
+#                  "Microprocessor and Microcontroller",
+#                  "Interfacing"]
+# }
 
-    # for key, val in tracks.items():
-    #     for i in val:
-    #         print(f"{key} : {i}")
+# for key, val in tracks.items():
+#     for i in val:
+#         print(f"{key} : {i}")
 
-    # print(tracks["software"][1:3])
+# print(tracks["software"][1:3])
+
+# ================================================
+
+
+def build_func(first_name, last_name):
+    person = {'fname': first_name, 'lname': last_name}
+    return person
+
+
+print(f"The dictionary is {build_func('Hassan','Sadeed')}")
