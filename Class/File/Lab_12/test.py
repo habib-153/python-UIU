@@ -1,4 +1,5 @@
 f = open("c:/Python-Uni/Lab-2/Class/File/Lab_12/test.txt","r")
+output = open("c:/Python-Uni/Lab-2/Class/File/Lab_12/output.txt","w")
 data = f.read()
 
 def cipher(text):
@@ -17,6 +18,6 @@ def cipher(text):
         else:
             newText = newText + char
     return newText
-print(cipher(data))
-
-
+encoded_text = cipher(data)
+print(encoded_text)
+output.write(encoded_text)
