@@ -5,9 +5,11 @@ def isPrime(n):
         if n % i == 0:
             return False
     return True
-num = int(input())
 
-if(isPrime(num)):
-    print("Prime")
-else:
-    print("Not Prime")
+if __name__ == "__main__":
+    num = int(input())
+
+    if(isPrime(num)):
+        print("Prime")
+    else:
+        print("Not Prime")
