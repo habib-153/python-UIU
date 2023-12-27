@@ -64,13 +64,25 @@
 
 # ==========================================
 
-lstCoun = ["Bangladesh", "India", "Pakistan", "Srilanka", "Afganisthan"]
-lstCap = ["Dhaka", "Delhi", "Islamabad" , "Colombo"]
+    # lstCoun = ["Bangladesh", "India", "Pakistan", "Srilanka", "Afganisthan"]
+    # lstCap = ["Dhaka", "Delhi", "Islamabad" , "Colombo"]
 
-country = input()
+    # country = input()
 
-for c in lstCoun:
-    if(c == country):
-        cap = lstCap[lstCoun.index(c)]
-        print(cap)
-        break
+    # for c in lstCoun:
+    #     if(c == country):
+    #         cap = lstCap[lstCoun.index(c)]
+    #         print(cap)
+    #         break
+
+# ===============================================
+    # my_dict = {'one': 1, 'two':2, 'three': 3}
+    # a, b, c = my_dict # Unpack keys
+    # #a, b, c = my_dict.values()
+    # print(a)
+    # print(b) 
+
+def make_pizza(*toppings):
+    print(toppings)
+# make_pizza('pepperoni')
+make_pizza('mushrooms', 'green peppers', 'extra cheese')
