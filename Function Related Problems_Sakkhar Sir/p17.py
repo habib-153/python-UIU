@@ -6,8 +6,8 @@ def devisor(n):
     return lst
 
 lst = list(map(int, input().split()))
-n1_lst = devisor(lst[0])
-n2_lst = devisor(lst[1])
+n1 = devisor(lst[0])
+n2 = devisor(lst[1])
 
 def gcd(lst1, lst2):
     common = []
@@ -16,7 +16,7 @@ def gcd(lst1, lst2):
             common.append(i)
     return max(common)
 
-Gcd = gcd(n1_lst, n2_lst)
+Gcd = gcd(n1, n2)
 print(f"GCD: {Gcd}")
 
 lcm = (lst[0]*lst[1]) // Gcd

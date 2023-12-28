@@ -82,7 +82,17 @@
     # print(a)
     # print(b) 
 
-def make_pizza(*toppings):
-    print(toppings)
-# make_pizza('pepperoni')
-make_pizza('mushrooms', 'green peppers', 'extra cheese')
+# def make_pizza(*toppings):
+#     print(toppings)
+# # make_pizza('pepperoni')
+# make_pizza('mushrooms', 'green peppers', 'extra cheese')
+
+orginal_lst = [1,2,3,4,5,6]
+
+def modify_lst(lst):
+    del lst[2]
+    return lst
+
+output = modify_lst(orginal_lst[:])
+print(f"Original: {orginal_lst}")
+print(f"Modified: {output}")

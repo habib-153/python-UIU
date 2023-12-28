@@ -2,22 +2,22 @@
     #     contents = f.read(10)
     #     print(contents)
 
-f = open("file.txt", "+a")
+f = open("file.txt", "r")
 # print(f.read())
-
-# Reading Line by Line
-# for line in f:
-    # print(line)     ............... print(line.strip()) -- for preventing to print extra line
+# data = f.readlines()
+# # Reading Line by Line
+# for line in data:
+#     print(line.strip())    #............... print(line.strip()) -- for preventing to print extra line
 
 cont= ''
 line = f.readlines()
 # print(line)
 for l in line:
     cont=cont+l.strip()
-# print(cont)
-# print(len(cont))
+print(cont)
+print(len(cont))
     
-f.write("You Can't")
+# f.write("You Can't")
 
 # ===============
 """
