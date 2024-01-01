@@ -13,7 +13,7 @@ def ScalarMultiply(mat, n):
             k = j*n
             print(k, end="\t")
         print()
-        
+
 def InputMatrix():
     for i in range(3):
         user_input = input().split()
@@ -21,7 +21,6 @@ def InputMatrix():
         matrix.append(lst)
 
 if __name__=="__main__":
-
     matrix = []
     first_call = InputMatrix()
     num = int(input("\n"))
