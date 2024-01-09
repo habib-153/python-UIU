@@ -1,5 +1,7 @@
 class Student:
-    def __init__(self, name):
-        print(f"A {name} object created")
+    def __init__(self, name,id):
+        self.name = name
+        self.id = id
 
-std1 = Student("Habibi")
+std1 = Student("Habibi", 12)
+print(std1.name)
