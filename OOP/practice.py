@@ -17,7 +17,6 @@ class Car:
         self.name = name      #instance variable
         self.model = model
         self.wheel = 4
-
     def view(self):           # instance method
         print(self.name, self.wheel, self.model)
 
