@@ -43,5 +43,7 @@ d1 = Dog("max", "white")
 d2 = Dog("Tom", "Brown")
 
 d1.update_color("Black&white")
+# print(d2.__dict__)    # dictionary akare attribute and value gula show kore
+# print(dir(d2))  ---> only attribute gula list e return kore 
 
 # d1.poke()
