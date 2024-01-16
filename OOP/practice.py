@@ -46,3 +46,9 @@ d1.update_color("Black&white")
 # print(d2.__dict__)    # dictionary akare attribute and value gula show kore
 # print(dir(d2))  ---> only attribute gula list e return kore 
 # d1.poke()
+
+from lec11 import Cat
+
+c1= Cat("White", "Jumping")
+c2 = Cat("Brown", "Jumping")
+c1.compare(c2)
