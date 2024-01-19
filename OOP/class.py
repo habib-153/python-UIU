@@ -7,6 +7,7 @@ class my_calculator:
             sum= sum*i
         print(sum)
 
+# @dispatch(int, int, int) --> Another option for fixing method overloading
 #  same name er method but different number of parameter -- > method overloading
 c1 = my_calculator()
 c1.product(4,5)
