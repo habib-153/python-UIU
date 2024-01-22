@@ -2,7 +2,8 @@
 """
 --> we can use get set method...it is a naming convention.
 --> __method ---> private method....class er bahire theke access kora jabe nah... we can also create private instance variable(__name)
--->
+--> public --> "details"
+--> private --> "__details"
 """
 class ABC:
     def __init__(self,name,id):
