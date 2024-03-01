@@ -46,7 +46,7 @@ d1.update_color("Black&white")
 # print(dir(d2))  ---> only attribute gula list e return kore 
 # d1.poke()
 
-from lec11 import Cat
+from OOP.Practice.lec11 import Cat
 
 c1= Cat("White", "Jumping")
 c2 = Cat("Brown", "Jumping")
