@@ -1,8 +1,6 @@
 class BankAccount:
     """Base class representing a bank account."""
 
-    # counter = 0  # Static counter to generate unique account numbers
-
     def __init__(self, holder_name, branch, account_type, initial_deposit=0):
         self.account_number = Utility.get_next_account_number()
         self.holder_name = holder_name
