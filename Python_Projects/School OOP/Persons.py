@@ -40,8 +40,6 @@ class Student(Person):
         self.grade = School.value_to_grade(points_avg)
         print(f'{self.name} final grade: {self.grade} with points avg {points_avg}')
 
-
-
     @property
     def id(self):
         return self.__id
