@@ -3,7 +3,6 @@ def is_palindrome_recursive(text, start, end):
         return True
     return text[start] == text[end] and is_palindrome_recursive(text, start + 1, end - 1)
 
-
 def get_reverse_recursive(char):
     reverse_map = {
         'A': 'A', 'M': 'M', 'Y': 'Y', 'Z': '5', 'O': 'O', '1': '1',
