@@ -1,0 +1,1089 @@
+2024-10-03 12:43:25,975:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:43:25,976:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:43:25,976:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:43:25,976:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:46:01,651:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:46:01,651:INFO:Logging name: clf-default-name
+2024-10-03 12:46:01,652:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:46:01,652:INFO:version 3.3.2
+2024-10-03 12:46:01,652:INFO:Initializing setup()
+2024-10-03 12:46:01,652:INFO:self.USI: fde5
+2024-10-03 12:46:01,652:INFO:self._variable_keys: {'y', 'X_test', 'n_jobs_param', 'X', 'memory', 'pipeline', 'fold_groups_param', 'y_test', 'exp_id', 'html_param', 'idx', '_available_plots', 'log_plots_param', 'fold_generator', 'seed', 'logging_param', 'target_param', 'fix_imbalance', 'data', 'fold_shuffle_param', '_ml_usecase', 'y_train', 'USI', 'exp_name_log', 'gpu_n_jobs_param', 'is_multiclass', 'X_train', 'gpu_param'}
+2024-10-03 12:46:01,652:INFO:Checking environment
+2024-10-03 12:46:01,652:INFO:python_version: 3.11.5
+2024-10-03 12:46:01,652:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:46:01,652:INFO:machine: AMD64
+2024-10-03 12:46:01,652:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:46:01,657:INFO:Memory: svmem(total=8358518784, available=681967616, percent=91.8, used=7676551168, free=681967616)
+2024-10-03 12:46:01,658:INFO:Physical Core: 4
+2024-10-03 12:46:01,658:INFO:Logical Core: 8
+2024-10-03 12:46:01,658:INFO:Checking libraries
+2024-10-03 12:46:01,658:INFO:System:
+2024-10-03 12:46:01,659:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:46:01,659:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:46:01,659:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:46:01,659:INFO:PyCaret required dependencies:
+2024-10-03 12:46:03,254:INFO:                 pip: 23.2.1
+2024-10-03 12:46:03,254:INFO:          setuptools: 65.5.0
+2024-10-03 12:46:03,254:INFO:             pycaret: 3.3.2
+2024-10-03 12:46:03,254:INFO:             IPython: 8.20.0
+2024-10-03 12:46:03,254:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:46:03,254:INFO:                tqdm: 4.66.5
+2024-10-03 12:46:03,254:INFO:               numpy: 1.26.2
+2024-10-03 12:46:03,256:INFO:              pandas: 2.2.1
+2024-10-03 12:46:03,256:INFO:              jinja2: 3.1.3
+2024-10-03 12:46:03,256:INFO:               scipy: 1.11.4
+2024-10-03 12:46:03,256:INFO:              joblib: 1.3.2
+2024-10-03 12:46:03,256:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:46:03,256:INFO:                pyod: 2.0.2
+2024-10-03 12:46:03,256:INFO:            imblearn: 0.12.3
+2024-10-03 12:46:03,256:INFO:   category_encoders: 2.6.4
+2024-10-03 12:46:03,256:INFO:            lightgbm: 4.5.0
+2024-10-03 12:46:03,256:INFO:               numba: 0.60.0
+2024-10-03 12:46:03,256:INFO:            requests: 2.31.0
+2024-10-03 12:46:03,256:INFO:          matplotlib: 3.7.5
+2024-10-03 12:46:03,256:INFO:          scikitplot: 0.3.7
+2024-10-03 12:46:03,256:INFO:         yellowbrick: 1.5
+2024-10-03 12:46:03,256:INFO:              plotly: 5.22.0
+2024-10-03 12:46:03,256:INFO:    plotly-resampler: Not installed
+2024-10-03 12:46:03,256:INFO:             kaleido: 0.2.1
+2024-10-03 12:46:03,256:INFO:           schemdraw: 0.15
+2024-10-03 12:46:03,256:INFO:         statsmodels: 0.14.3
+2024-10-03 12:46:03,256:INFO:              sktime: 0.26.0
+2024-10-03 12:46:03,256:INFO:               tbats: 1.1.3
+2024-10-03 12:46:03,256:INFO:            pmdarima: 2.0.4
+2024-10-03 12:46:03,256:INFO:              psutil: 5.9.8
+2024-10-03 12:46:03,256:INFO:          markupsafe: 2.1.4
+2024-10-03 12:46:03,257:INFO:             pickle5: Not installed
+2024-10-03 12:46:03,257:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:46:03,257:INFO:         deprecation: 2.1.0
+2024-10-03 12:46:03,257:INFO:              xxhash: 3.5.0
+2024-10-03 12:46:03,257:INFO:           wurlitzer: Not installed
+2024-10-03 12:46:03,257:INFO:PyCaret optional dependencies:
+2024-10-03 12:46:03,274:INFO:                shap: Not installed
+2024-10-03 12:46:03,274:INFO:           interpret: Not installed
+2024-10-03 12:46:03,274:INFO:                umap: Not installed
+2024-10-03 12:46:03,274:INFO:     ydata_profiling: Not installed
+2024-10-03 12:46:03,274:INFO:  explainerdashboard: Not installed
+2024-10-03 12:46:03,274:INFO:             autoviz: Not installed
+2024-10-03 12:46:03,274:INFO:           fairlearn: Not installed
+2024-10-03 12:46:03,274:INFO:          deepchecks: Not installed
+2024-10-03 12:46:03,274:INFO:             xgboost: Not installed
+2024-10-03 12:46:03,274:INFO:            catboost: Not installed
+2024-10-03 12:46:03,274:INFO:              kmodes: Not installed
+2024-10-03 12:46:03,274:INFO:             mlxtend: Not installed
+2024-10-03 12:46:03,274:INFO:       statsforecast: Not installed
+2024-10-03 12:46:03,274:INFO:        tune_sklearn: Not installed
+2024-10-03 12:46:03,274:INFO:                 ray: Not installed
+2024-10-03 12:46:03,274:INFO:            hyperopt: Not installed
+2024-10-03 12:46:03,274:INFO:              optuna: Not installed
+2024-10-03 12:46:03,274:INFO:               skopt: Not installed
+2024-10-03 12:46:03,274:INFO:              mlflow: Not installed
+2024-10-03 12:46:03,274:INFO:              gradio: Not installed
+2024-10-03 12:46:03,274:INFO:             fastapi: Not installed
+2024-10-03 12:46:03,274:INFO:             uvicorn: Not installed
+2024-10-03 12:46:03,274:INFO:              m2cgen: Not installed
+2024-10-03 12:46:03,274:INFO:           evidently: Not installed
+2024-10-03 12:46:03,274:INFO:               fugue: Not installed
+2024-10-03 12:46:03,276:INFO:           streamlit: 1.34.0
+2024-10-03 12:46:03,276:INFO:             prophet: Not installed
+2024-10-03 12:46:03,276:INFO:None
+2024-10-03 12:46:03,276:INFO:Set up data.
+2024-10-03 12:46:03,400:INFO:Set up folding strategy.
+2024-10-03 12:46:03,400:INFO:Set up train/test split.
+2024-10-03 12:46:03,400:INFO:Set up data.
+2024-10-03 12:46:53,442:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:46:53,443:INFO:Logging name: clf-default-name
+2024-10-03 12:46:53,444:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:46:53,444:INFO:version 3.3.2
+2024-10-03 12:46:53,444:INFO:Initializing setup()
+2024-10-03 12:46:53,444:INFO:self.USI: 01f2
+2024-10-03 12:46:53,444:INFO:self._variable_keys: {'y', 'X_test', 'n_jobs_param', 'X', 'memory', 'pipeline', 'fold_groups_param', 'y_test', 'exp_id', 'html_param', 'idx', '_available_plots', 'log_plots_param', 'fold_generator', 'seed', 'logging_param', 'target_param', 'fix_imbalance', 'data', 'fold_shuffle_param', '_ml_usecase', 'y_train', 'USI', 'exp_name_log', 'gpu_n_jobs_param', 'is_multiclass', 'X_train', 'gpu_param'}
+2024-10-03 12:46:53,444:INFO:Checking environment
+2024-10-03 12:46:53,444:INFO:python_version: 3.11.5
+2024-10-03 12:46:53,444:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:46:53,444:INFO:machine: AMD64
+2024-10-03 12:46:53,444:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:46:53,451:INFO:Memory: svmem(total=8358518784, available=598896640, percent=92.8, used=7759622144, free=598896640)
+2024-10-03 12:46:53,451:INFO:Physical Core: 4
+2024-10-03 12:46:53,451:INFO:Logical Core: 8
+2024-10-03 12:46:53,451:INFO:Checking libraries
+2024-10-03 12:46:53,452:INFO:System:
+2024-10-03 12:46:53,452:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:46:53,452:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:46:53,452:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:46:53,452:INFO:PyCaret required dependencies:
+2024-10-03 12:46:53,452:INFO:                 pip: 23.2.1
+2024-10-03 12:46:53,453:INFO:          setuptools: 65.5.0
+2024-10-03 12:46:53,453:INFO:             pycaret: 3.3.2
+2024-10-03 12:46:53,453:INFO:             IPython: 8.20.0
+2024-10-03 12:46:53,453:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:46:53,453:INFO:                tqdm: 4.66.5
+2024-10-03 12:46:53,453:INFO:               numpy: 1.26.2
+2024-10-03 12:46:53,453:INFO:              pandas: 2.2.1
+2024-10-03 12:46:53,453:INFO:              jinja2: 3.1.3
+2024-10-03 12:46:53,453:INFO:               scipy: 1.11.4
+2024-10-03 12:46:53,453:INFO:              joblib: 1.3.2
+2024-10-03 12:46:53,454:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:46:53,454:INFO:                pyod: 2.0.2
+2024-10-03 12:46:53,454:INFO:            imblearn: 0.12.3
+2024-10-03 12:46:53,454:INFO:   category_encoders: 2.6.4
+2024-10-03 12:46:53,454:INFO:            lightgbm: 4.5.0
+2024-10-03 12:46:53,454:INFO:               numba: 0.60.0
+2024-10-03 12:46:53,454:INFO:            requests: 2.31.0
+2024-10-03 12:46:53,454:INFO:          matplotlib: 3.7.5
+2024-10-03 12:46:53,454:INFO:          scikitplot: 0.3.7
+2024-10-03 12:46:53,454:INFO:         yellowbrick: 1.5
+2024-10-03 12:46:53,455:INFO:              plotly: 5.22.0
+2024-10-03 12:46:53,455:INFO:    plotly-resampler: Not installed
+2024-10-03 12:46:53,455:INFO:             kaleido: 0.2.1
+2024-10-03 12:46:53,455:INFO:           schemdraw: 0.15
+2024-10-03 12:46:53,455:INFO:         statsmodels: 0.14.3
+2024-10-03 12:46:53,455:INFO:              sktime: 0.26.0
+2024-10-03 12:46:53,455:INFO:               tbats: 1.1.3
+2024-10-03 12:46:53,455:INFO:            pmdarima: 2.0.4
+2024-10-03 12:46:53,455:INFO:              psutil: 5.9.8
+2024-10-03 12:46:53,456:INFO:          markupsafe: 2.1.4
+2024-10-03 12:46:53,456:INFO:             pickle5: Not installed
+2024-10-03 12:46:53,456:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:46:53,456:INFO:         deprecation: 2.1.0
+2024-10-03 12:46:53,456:INFO:              xxhash: 3.5.0
+2024-10-03 12:46:53,456:INFO:           wurlitzer: Not installed
+2024-10-03 12:46:53,456:INFO:PyCaret optional dependencies:
+2024-10-03 12:46:53,456:INFO:                shap: Not installed
+2024-10-03 12:46:53,456:INFO:           interpret: Not installed
+2024-10-03 12:46:53,456:INFO:                umap: Not installed
+2024-10-03 12:46:53,456:INFO:     ydata_profiling: Not installed
+2024-10-03 12:46:53,456:INFO:  explainerdashboard: Not installed
+2024-10-03 12:46:53,456:INFO:             autoviz: Not installed
+2024-10-03 12:46:53,457:INFO:           fairlearn: Not installed
+2024-10-03 12:46:53,457:INFO:          deepchecks: Not installed
+2024-10-03 12:46:53,457:INFO:             xgboost: Not installed
+2024-10-03 12:46:53,457:INFO:            catboost: Not installed
+2024-10-03 12:46:53,457:INFO:              kmodes: Not installed
+2024-10-03 12:46:53,457:INFO:             mlxtend: Not installed
+2024-10-03 12:46:53,457:INFO:       statsforecast: Not installed
+2024-10-03 12:46:53,457:INFO:        tune_sklearn: Not installed
+2024-10-03 12:46:53,457:INFO:                 ray: Not installed
+2024-10-03 12:46:53,457:INFO:            hyperopt: Not installed
+2024-10-03 12:46:53,457:INFO:              optuna: Not installed
+2024-10-03 12:46:53,457:INFO:               skopt: Not installed
+2024-10-03 12:46:53,458:INFO:              mlflow: Not installed
+2024-10-03 12:46:53,458:INFO:              gradio: Not installed
+2024-10-03 12:46:53,458:INFO:             fastapi: Not installed
+2024-10-03 12:46:53,458:INFO:             uvicorn: Not installed
+2024-10-03 12:46:53,458:INFO:              m2cgen: Not installed
+2024-10-03 12:46:53,458:INFO:           evidently: Not installed
+2024-10-03 12:46:53,458:INFO:               fugue: Not installed
+2024-10-03 12:46:53,458:INFO:           streamlit: 1.34.0
+2024-10-03 12:46:53,458:INFO:             prophet: Not installed
+2024-10-03 12:46:53,458:INFO:None
+2024-10-03 12:46:53,459:INFO:Set up data.
+2024-10-03 12:46:53,589:INFO:Set up folding strategy.
+2024-10-03 12:46:53,589:INFO:Set up train/test split.
+2024-10-03 12:46:53,589:INFO:Set up data.
+2024-10-03 12:47:42,274:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:47:42,274:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:47:42,274:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:47:42,274:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:48:25,239:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:48:26,101:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:48:27,734:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:48:29,383:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\3361731304.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Inflight entertainment", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0, 0])
+
+2024-10-03 12:48:30,234:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\3361731304.py:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Leg room service", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[1, 0])
+
+2024-10-03 12:48:34,898:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:48:34,898:INFO:Logging name: clf-default-name
+2024-10-03 12:48:34,898:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:48:34,898:INFO:version 3.3.2
+2024-10-03 12:48:34,898:INFO:Initializing setup()
+2024-10-03 12:48:34,898:INFO:self.USI: 611b
+2024-10-03 12:48:34,898:INFO:self._variable_keys: {'gpu_n_jobs_param', 'exp_id', 'fold_generator', 'fold_groups_param', 'exp_name_log', 'data', 'y', 'pipeline', 'gpu_param', 'USI', 'memory', 'n_jobs_param', 'X_test', 'y_test', 'X_train', 'log_plots_param', 'X', 'is_multiclass', 'idx', 'html_param', 'fold_shuffle_param', 'seed', 'logging_param', 'target_param', '_available_plots', '_ml_usecase', 'y_train', 'fix_imbalance'}
+2024-10-03 12:48:34,898:INFO:Checking environment
+2024-10-03 12:48:34,900:INFO:python_version: 3.11.5
+2024-10-03 12:48:34,900:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:48:34,900:INFO:machine: AMD64
+2024-10-03 12:48:34,900:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:48:34,905:INFO:Memory: svmem(total=8358518784, available=227143680, percent=97.3, used=8131375104, free=227143680)
+2024-10-03 12:48:34,905:INFO:Physical Core: 4
+2024-10-03 12:48:34,905:INFO:Logical Core: 8
+2024-10-03 12:48:34,905:INFO:Checking libraries
+2024-10-03 12:48:34,905:INFO:System:
+2024-10-03 12:48:34,905:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:48:34,905:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:48:34,905:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:48:34,906:INFO:PyCaret required dependencies:
+2024-10-03 12:48:35,064:INFO:                 pip: 23.2.1
+2024-10-03 12:48:35,064:INFO:          setuptools: 65.5.0
+2024-10-03 12:48:35,064:INFO:             pycaret: 3.3.2
+2024-10-03 12:48:35,064:INFO:             IPython: 8.20.0
+2024-10-03 12:48:35,064:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:48:35,064:INFO:                tqdm: 4.66.5
+2024-10-03 12:48:35,064:INFO:               numpy: 1.26.2
+2024-10-03 12:48:35,064:INFO:              pandas: 2.1.4
+2024-10-03 12:48:35,064:INFO:              jinja2: 3.1.3
+2024-10-03 12:48:35,064:INFO:               scipy: 1.11.4
+2024-10-03 12:48:35,064:INFO:              joblib: 1.3.2
+2024-10-03 12:48:35,064:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:48:35,064:INFO:                pyod: 2.0.2
+2024-10-03 12:48:35,064:INFO:            imblearn: 0.12.3
+2024-10-03 12:48:35,064:INFO:   category_encoders: 2.6.4
+2024-10-03 12:48:35,064:INFO:            lightgbm: 4.5.0
+2024-10-03 12:48:35,064:INFO:               numba: 0.60.0
+2024-10-03 12:48:35,064:INFO:            requests: 2.31.0
+2024-10-03 12:48:35,064:INFO:          matplotlib: 3.7.5
+2024-10-03 12:48:35,064:INFO:          scikitplot: 0.3.7
+2024-10-03 12:48:35,064:INFO:         yellowbrick: 1.5
+2024-10-03 12:48:35,066:INFO:              plotly: 5.22.0
+2024-10-03 12:48:35,066:INFO:    plotly-resampler: Not installed
+2024-10-03 12:48:35,066:INFO:             kaleido: 0.2.1
+2024-10-03 12:48:35,066:INFO:           schemdraw: 0.15
+2024-10-03 12:48:35,066:INFO:         statsmodels: 0.14.3
+2024-10-03 12:48:35,066:INFO:              sktime: 0.26.0
+2024-10-03 12:48:35,066:INFO:               tbats: 1.1.3
+2024-10-03 12:48:35,066:INFO:            pmdarima: 2.0.4
+2024-10-03 12:48:35,066:INFO:              psutil: 5.9.8
+2024-10-03 12:48:35,066:INFO:          markupsafe: 2.1.4
+2024-10-03 12:48:35,066:INFO:             pickle5: Not installed
+2024-10-03 12:48:35,066:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:48:35,066:INFO:         deprecation: 2.1.0
+2024-10-03 12:48:35,066:INFO:              xxhash: 3.5.0
+2024-10-03 12:48:35,066:INFO:           wurlitzer: Not installed
+2024-10-03 12:48:35,066:INFO:PyCaret optional dependencies:
+2024-10-03 12:48:35,083:INFO:                shap: Not installed
+2024-10-03 12:48:35,083:INFO:           interpret: Not installed
+2024-10-03 12:48:35,083:INFO:                umap: Not installed
+2024-10-03 12:48:35,083:INFO:     ydata_profiling: Not installed
+2024-10-03 12:48:35,083:INFO:  explainerdashboard: Not installed
+2024-10-03 12:48:35,083:INFO:             autoviz: Not installed
+2024-10-03 12:48:35,083:INFO:           fairlearn: Not installed
+2024-10-03 12:48:35,083:INFO:          deepchecks: Not installed
+2024-10-03 12:48:35,083:INFO:             xgboost: Not installed
+2024-10-03 12:48:35,083:INFO:            catboost: Not installed
+2024-10-03 12:48:35,084:INFO:              kmodes: Not installed
+2024-10-03 12:48:35,084:INFO:             mlxtend: Not installed
+2024-10-03 12:48:35,084:INFO:       statsforecast: Not installed
+2024-10-03 12:48:35,084:INFO:        tune_sklearn: Not installed
+2024-10-03 12:48:35,084:INFO:                 ray: Not installed
+2024-10-03 12:48:35,084:INFO:            hyperopt: Not installed
+2024-10-03 12:48:35,084:INFO:              optuna: Not installed
+2024-10-03 12:48:35,084:INFO:               skopt: Not installed
+2024-10-03 12:48:35,084:INFO:              mlflow: Not installed
+2024-10-03 12:48:35,084:INFO:              gradio: Not installed
+2024-10-03 12:48:35,084:INFO:             fastapi: Not installed
+2024-10-03 12:48:35,084:INFO:             uvicorn: Not installed
+2024-10-03 12:48:35,084:INFO:              m2cgen: Not installed
+2024-10-03 12:48:35,084:INFO:           evidently: Not installed
+2024-10-03 12:48:35,084:INFO:               fugue: Not installed
+2024-10-03 12:48:35,084:INFO:           streamlit: 1.34.0
+2024-10-03 12:48:35,084:INFO:             prophet: Not installed
+2024-10-03 12:48:35,085:INFO:None
+2024-10-03 12:48:35,085:INFO:Set up data.
+2024-10-03 12:48:35,129:INFO:Set up folding strategy.
+2024-10-03 12:48:35,129:INFO:Set up train/test split.
+2024-10-03 12:48:35,129:INFO:Set up data.
+2024-10-03 12:50:29,678:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:50:29,678:INFO:Logging name: clf-default-name
+2024-10-03 12:50:29,678:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:50:29,678:INFO:version 3.3.2
+2024-10-03 12:50:29,678:INFO:Initializing setup()
+2024-10-03 12:50:29,678:INFO:self.USI: 41f6
+2024-10-03 12:50:29,678:INFO:self._variable_keys: {'gpu_n_jobs_param', 'exp_id', 'fold_generator', 'fold_groups_param', 'exp_name_log', 'data', 'y', 'pipeline', 'gpu_param', 'USI', 'memory', 'n_jobs_param', 'X_test', 'y_test', 'X_train', 'log_plots_param', 'X', 'is_multiclass', 'idx', 'html_param', 'fold_shuffle_param', 'seed', 'logging_param', 'target_param', '_available_plots', '_ml_usecase', 'y_train', 'fix_imbalance'}
+2024-10-03 12:50:29,679:INFO:Checking environment
+2024-10-03 12:50:29,679:INFO:python_version: 3.11.5
+2024-10-03 12:50:29,679:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:50:29,679:INFO:machine: AMD64
+2024-10-03 12:50:29,679:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:50:29,684:INFO:Memory: svmem(total=8358518784, available=936329216, percent=88.8, used=7422189568, free=936329216)
+2024-10-03 12:50:29,684:INFO:Physical Core: 4
+2024-10-03 12:50:29,684:INFO:Logical Core: 8
+2024-10-03 12:50:29,684:INFO:Checking libraries
+2024-10-03 12:50:29,684:INFO:System:
+2024-10-03 12:50:29,686:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:50:29,686:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:50:29,686:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:50:29,686:INFO:PyCaret required dependencies:
+2024-10-03 12:50:29,686:INFO:                 pip: 23.2.1
+2024-10-03 12:50:29,686:INFO:          setuptools: 65.5.0
+2024-10-03 12:50:29,686:INFO:             pycaret: 3.3.2
+2024-10-03 12:50:29,687:INFO:             IPython: 8.20.0
+2024-10-03 12:50:29,687:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:50:29,687:INFO:                tqdm: 4.66.5
+2024-10-03 12:50:29,687:INFO:               numpy: 1.26.2
+2024-10-03 12:50:29,687:INFO:              pandas: 2.1.4
+2024-10-03 12:50:29,687:INFO:              jinja2: 3.1.3
+2024-10-03 12:50:29,687:INFO:               scipy: 1.11.4
+2024-10-03 12:50:29,687:INFO:              joblib: 1.3.2
+2024-10-03 12:50:29,688:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:50:29,688:INFO:                pyod: 2.0.2
+2024-10-03 12:50:29,688:INFO:            imblearn: 0.12.3
+2024-10-03 12:50:29,688:INFO:   category_encoders: 2.6.4
+2024-10-03 12:50:29,688:INFO:            lightgbm: 4.5.0
+2024-10-03 12:50:29,688:INFO:               numba: 0.60.0
+2024-10-03 12:50:29,688:INFO:            requests: 2.31.0
+2024-10-03 12:50:29,688:INFO:          matplotlib: 3.7.5
+2024-10-03 12:50:29,688:INFO:          scikitplot: 0.3.7
+2024-10-03 12:50:29,689:INFO:         yellowbrick: 1.5
+2024-10-03 12:50:29,689:INFO:              plotly: 5.22.0
+2024-10-03 12:50:29,689:INFO:    plotly-resampler: Not installed
+2024-10-03 12:50:29,689:INFO:             kaleido: 0.2.1
+2024-10-03 12:50:29,689:INFO:           schemdraw: 0.15
+2024-10-03 12:50:29,689:INFO:         statsmodels: 0.14.3
+2024-10-03 12:50:29,689:INFO:              sktime: 0.26.0
+2024-10-03 12:50:29,689:INFO:               tbats: 1.1.3
+2024-10-03 12:50:29,689:INFO:            pmdarima: 2.0.4
+2024-10-03 12:50:29,689:INFO:              psutil: 5.9.8
+2024-10-03 12:50:29,689:INFO:          markupsafe: 2.1.4
+2024-10-03 12:50:29,689:INFO:             pickle5: Not installed
+2024-10-03 12:50:29,690:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:50:29,690:INFO:         deprecation: 2.1.0
+2024-10-03 12:50:29,690:INFO:              xxhash: 3.5.0
+2024-10-03 12:50:29,690:INFO:           wurlitzer: Not installed
+2024-10-03 12:50:29,690:INFO:PyCaret optional dependencies:
+2024-10-03 12:50:29,690:INFO:                shap: Not installed
+2024-10-03 12:50:29,690:INFO:           interpret: Not installed
+2024-10-03 12:50:29,691:INFO:                umap: Not installed
+2024-10-03 12:50:29,691:INFO:     ydata_profiling: Not installed
+2024-10-03 12:50:29,691:INFO:  explainerdashboard: Not installed
+2024-10-03 12:50:29,691:INFO:             autoviz: Not installed
+2024-10-03 12:50:29,691:INFO:           fairlearn: Not installed
+2024-10-03 12:50:29,691:INFO:          deepchecks: Not installed
+2024-10-03 12:50:29,691:INFO:             xgboost: Not installed
+2024-10-03 12:50:29,691:INFO:            catboost: Not installed
+2024-10-03 12:50:29,691:INFO:              kmodes: Not installed
+2024-10-03 12:50:29,691:INFO:             mlxtend: Not installed
+2024-10-03 12:50:29,691:INFO:       statsforecast: Not installed
+2024-10-03 12:50:29,692:INFO:        tune_sklearn: Not installed
+2024-10-03 12:50:29,692:INFO:                 ray: Not installed
+2024-10-03 12:50:29,692:INFO:            hyperopt: Not installed
+2024-10-03 12:50:29,692:INFO:              optuna: Not installed
+2024-10-03 12:50:29,692:INFO:               skopt: Not installed
+2024-10-03 12:50:29,692:INFO:              mlflow: Not installed
+2024-10-03 12:50:29,692:INFO:              gradio: Not installed
+2024-10-03 12:50:29,692:INFO:             fastapi: Not installed
+2024-10-03 12:50:29,692:INFO:             uvicorn: Not installed
+2024-10-03 12:50:29,692:INFO:              m2cgen: Not installed
+2024-10-03 12:50:29,692:INFO:           evidently: Not installed
+2024-10-03 12:50:29,692:INFO:               fugue: Not installed
+2024-10-03 12:50:29,693:INFO:           streamlit: 1.34.0
+2024-10-03 12:50:29,693:INFO:             prophet: Not installed
+2024-10-03 12:50:29,693:INFO:None
+2024-10-03 12:50:29,693:INFO:Set up data.
+2024-10-03 12:50:29,744:INFO:Set up folding strategy.
+2024-10-03 12:50:29,745:INFO:Set up train/test split.
+2024-10-03 12:50:29,745:INFO:Set up data.
+2024-10-03 12:50:56,686:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:50:56,687:INFO:Logging name: clf-default-name
+2024-10-03 12:50:56,687:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:50:56,687:INFO:version 3.3.2
+2024-10-03 12:50:56,687:INFO:Initializing setup()
+2024-10-03 12:50:56,687:INFO:self.USI: ea67
+2024-10-03 12:50:56,687:INFO:self._variable_keys: {'gpu_n_jobs_param', 'exp_id', 'fold_generator', 'fold_groups_param', 'exp_name_log', 'data', 'y', 'pipeline', 'gpu_param', 'USI', 'memory', 'n_jobs_param', 'X_test', 'y_test', 'X_train', 'log_plots_param', 'X', 'is_multiclass', 'idx', 'html_param', 'fold_shuffle_param', 'seed', 'logging_param', 'target_param', '_available_plots', '_ml_usecase', 'y_train', 'fix_imbalance'}
+2024-10-03 12:50:56,687:INFO:Checking environment
+2024-10-03 12:50:56,687:INFO:python_version: 3.11.5
+2024-10-03 12:50:56,688:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:50:56,688:INFO:machine: AMD64
+2024-10-03 12:50:56,688:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:50:56,694:INFO:Memory: svmem(total=8358518784, available=852258816, percent=89.8, used=7506259968, free=852258816)
+2024-10-03 12:50:56,694:INFO:Physical Core: 4
+2024-10-03 12:50:56,694:INFO:Logical Core: 8
+2024-10-03 12:50:56,694:INFO:Checking libraries
+2024-10-03 12:50:56,694:INFO:System:
+2024-10-03 12:50:56,694:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:50:56,694:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:50:56,694:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:50:56,694:INFO:PyCaret required dependencies:
+2024-10-03 12:50:56,694:INFO:                 pip: 23.2.1
+2024-10-03 12:50:56,694:INFO:          setuptools: 65.5.0
+2024-10-03 12:50:56,694:INFO:             pycaret: 3.3.2
+2024-10-03 12:50:56,694:INFO:             IPython: 8.20.0
+2024-10-03 12:50:56,694:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:50:56,694:INFO:                tqdm: 4.66.5
+2024-10-03 12:50:56,694:INFO:               numpy: 1.26.2
+2024-10-03 12:50:56,694:INFO:              pandas: 2.1.4
+2024-10-03 12:50:56,694:INFO:              jinja2: 3.1.3
+2024-10-03 12:50:56,694:INFO:               scipy: 1.11.4
+2024-10-03 12:50:56,694:INFO:              joblib: 1.3.2
+2024-10-03 12:50:56,694:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:50:56,696:INFO:                pyod: 2.0.2
+2024-10-03 12:50:56,696:INFO:            imblearn: 0.12.3
+2024-10-03 12:50:56,696:INFO:   category_encoders: 2.6.4
+2024-10-03 12:50:56,696:INFO:            lightgbm: 4.5.0
+2024-10-03 12:50:56,696:INFO:               numba: 0.60.0
+2024-10-03 12:50:56,696:INFO:            requests: 2.31.0
+2024-10-03 12:50:56,696:INFO:          matplotlib: 3.7.5
+2024-10-03 12:50:56,696:INFO:          scikitplot: 0.3.7
+2024-10-03 12:50:56,696:INFO:         yellowbrick: 1.5
+2024-10-03 12:50:56,696:INFO:              plotly: 5.22.0
+2024-10-03 12:50:56,696:INFO:    plotly-resampler: Not installed
+2024-10-03 12:50:56,696:INFO:             kaleido: 0.2.1
+2024-10-03 12:50:56,696:INFO:           schemdraw: 0.15
+2024-10-03 12:50:56,696:INFO:         statsmodels: 0.14.3
+2024-10-03 12:50:56,696:INFO:              sktime: 0.26.0
+2024-10-03 12:50:56,696:INFO:               tbats: 1.1.3
+2024-10-03 12:50:56,696:INFO:            pmdarima: 2.0.4
+2024-10-03 12:50:56,697:INFO:              psutil: 5.9.8
+2024-10-03 12:50:56,697:INFO:          markupsafe: 2.1.4
+2024-10-03 12:50:56,697:INFO:             pickle5: Not installed
+2024-10-03 12:50:56,697:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:50:56,698:INFO:         deprecation: 2.1.0
+2024-10-03 12:50:56,698:INFO:              xxhash: 3.5.0
+2024-10-03 12:50:56,698:INFO:           wurlitzer: Not installed
+2024-10-03 12:50:56,698:INFO:PyCaret optional dependencies:
+2024-10-03 12:50:56,698:INFO:                shap: Not installed
+2024-10-03 12:50:56,698:INFO:           interpret: Not installed
+2024-10-03 12:50:56,698:INFO:                umap: Not installed
+2024-10-03 12:50:56,698:INFO:     ydata_profiling: Not installed
+2024-10-03 12:50:56,699:INFO:  explainerdashboard: Not installed
+2024-10-03 12:50:56,699:INFO:             autoviz: Not installed
+2024-10-03 12:50:56,699:INFO:           fairlearn: Not installed
+2024-10-03 12:50:56,699:INFO:          deepchecks: Not installed
+2024-10-03 12:50:56,699:INFO:             xgboost: Not installed
+2024-10-03 12:50:56,699:INFO:            catboost: Not installed
+2024-10-03 12:50:56,699:INFO:              kmodes: Not installed
+2024-10-03 12:50:56,699:INFO:             mlxtend: Not installed
+2024-10-03 12:50:56,699:INFO:       statsforecast: Not installed
+2024-10-03 12:50:56,699:INFO:        tune_sklearn: Not installed
+2024-10-03 12:50:56,700:INFO:                 ray: Not installed
+2024-10-03 12:50:56,700:INFO:            hyperopt: Not installed
+2024-10-03 12:50:56,700:INFO:              optuna: Not installed
+2024-10-03 12:50:56,700:INFO:               skopt: Not installed
+2024-10-03 12:50:56,700:INFO:              mlflow: Not installed
+2024-10-03 12:50:56,700:INFO:              gradio: Not installed
+2024-10-03 12:50:56,700:INFO:             fastapi: Not installed
+2024-10-03 12:50:56,700:INFO:             uvicorn: Not installed
+2024-10-03 12:50:56,700:INFO:              m2cgen: Not installed
+2024-10-03 12:50:56,700:INFO:           evidently: Not installed
+2024-10-03 12:50:56,700:INFO:               fugue: Not installed
+2024-10-03 12:50:56,700:INFO:           streamlit: 1.34.0
+2024-10-03 12:50:56,700:INFO:             prophet: Not installed
+2024-10-03 12:50:56,700:INFO:None
+2024-10-03 12:50:56,701:INFO:Set up data.
+2024-10-03 12:50:56,743:INFO:Set up folding strategy.
+2024-10-03 12:50:56,743:INFO:Set up train/test split.
+2024-10-03 12:50:56,743:INFO:Set up data.
+2024-10-03 12:52:04,346:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:52:05,082:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:52:05,994:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_14120\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:52:29,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:52:29,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:52:29,220:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:52:29,220:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:55:01,195:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:55:01,195:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:55:01,195:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:55:01,195:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-03 12:55:40,306:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:55:41,106:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:55:42,010:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 12:55:43,274:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\3361731304.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Inflight entertainment", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0, 0])
+
+2024-10-03 12:55:44,284:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\3361731304.py:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Leg room service", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[1, 0])
+
+2024-10-03 12:55:48,554:INFO:PyCaret ClassificationExperiment
+2024-10-03 12:55:48,554:INFO:Logging name: clf-default-name
+2024-10-03 12:55:48,554:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 12:55:48,554:INFO:version 3.3.2
+2024-10-03 12:55:48,554:INFO:Initializing setup()
+2024-10-03 12:55:48,554:INFO:self.USI: 2ba5
+2024-10-03 12:55:48,556:INFO:self._variable_keys: {'_ml_usecase', 'data', 'fold_generator', 'fold_groups_param', 'X', 'exp_id', 'y', 'seed', 'gpu_n_jobs_param', 'y_train', 'gpu_param', 'idx', 'n_jobs_param', 'log_plots_param', 'fix_imbalance', 'is_multiclass', '_available_plots', 'fold_shuffle_param', 'memory', 'X_train', 'y_test', 'exp_name_log', 'html_param', 'USI', 'target_param', 'logging_param', 'X_test', 'pipeline'}
+2024-10-03 12:55:48,556:INFO:Checking environment
+2024-10-03 12:55:48,556:INFO:python_version: 3.11.5
+2024-10-03 12:55:48,556:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 12:55:48,556:INFO:machine: AMD64
+2024-10-03 12:55:48,556:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 12:55:48,563:INFO:Memory: svmem(total=8358518784, available=604073984, percent=92.8, used=7754444800, free=604073984)
+2024-10-03 12:55:48,563:INFO:Physical Core: 4
+2024-10-03 12:55:48,563:INFO:Logical Core: 8
+2024-10-03 12:55:48,564:INFO:Checking libraries
+2024-10-03 12:55:48,564:INFO:System:
+2024-10-03 12:55:48,564:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 12:55:48,564:INFO:executable: c:\Python311\python.exe
+2024-10-03 12:55:48,564:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 12:55:48,564:INFO:PyCaret required dependencies:
+2024-10-03 12:55:48,656:INFO:                 pip: 23.2.1
+2024-10-03 12:55:48,657:INFO:          setuptools: 65.5.0
+2024-10-03 12:55:48,657:INFO:             pycaret: 3.3.2
+2024-10-03 12:55:48,657:INFO:             IPython: 8.20.0
+2024-10-03 12:55:48,657:INFO:          ipywidgets: 8.1.1
+2024-10-03 12:55:48,657:INFO:                tqdm: 4.66.5
+2024-10-03 12:55:48,657:INFO:               numpy: 1.26.2
+2024-10-03 12:55:48,658:INFO:              pandas: 2.1.4
+2024-10-03 12:55:48,658:INFO:              jinja2: 3.1.3
+2024-10-03 12:55:48,658:INFO:               scipy: 1.11.4
+2024-10-03 12:55:48,658:INFO:              joblib: 1.3.2
+2024-10-03 12:55:48,658:INFO:             sklearn: 1.4.1.post1
+2024-10-03 12:55:48,658:INFO:                pyod: 2.0.2
+2024-10-03 12:55:48,658:INFO:            imblearn: 0.12.3
+2024-10-03 12:55:48,658:INFO:   category_encoders: 2.6.4
+2024-10-03 12:55:48,658:INFO:            lightgbm: 4.5.0
+2024-10-03 12:55:48,659:INFO:               numba: 0.60.0
+2024-10-03 12:55:48,659:INFO:            requests: 2.31.0
+2024-10-03 12:55:48,659:INFO:          matplotlib: 3.7.5
+2024-10-03 12:55:48,659:INFO:          scikitplot: 0.3.7
+2024-10-03 12:55:48,659:INFO:         yellowbrick: 1.5
+2024-10-03 12:55:48,659:INFO:              plotly: 5.22.0
+2024-10-03 12:55:48,659:INFO:    plotly-resampler: Not installed
+2024-10-03 12:55:48,659:INFO:             kaleido: 0.2.1
+2024-10-03 12:55:48,659:INFO:           schemdraw: 0.15
+2024-10-03 12:55:48,660:INFO:         statsmodels: 0.14.3
+2024-10-03 12:55:48,660:INFO:              sktime: 0.26.0
+2024-10-03 12:55:48,660:INFO:               tbats: 1.1.3
+2024-10-03 12:55:48,660:INFO:            pmdarima: 2.0.4
+2024-10-03 12:55:48,660:INFO:              psutil: 5.9.8
+2024-10-03 12:55:48,660:INFO:          markupsafe: 2.1.4
+2024-10-03 12:55:48,660:INFO:             pickle5: Not installed
+2024-10-03 12:55:48,661:INFO:         cloudpickle: 3.0.0
+2024-10-03 12:55:48,661:INFO:         deprecation: 2.1.0
+2024-10-03 12:55:48,661:INFO:              xxhash: 3.5.0
+2024-10-03 12:55:48,661:INFO:           wurlitzer: Not installed
+2024-10-03 12:55:48,661:INFO:PyCaret optional dependencies:
+2024-10-03 12:55:48,686:INFO:                shap: Not installed
+2024-10-03 12:55:48,687:INFO:           interpret: Not installed
+2024-10-03 12:55:48,687:INFO:                umap: Not installed
+2024-10-03 12:55:48,687:INFO:     ydata_profiling: Not installed
+2024-10-03 12:55:48,687:INFO:  explainerdashboard: Not installed
+2024-10-03 12:55:48,687:INFO:             autoviz: Not installed
+2024-10-03 12:55:48,687:INFO:           fairlearn: Not installed
+2024-10-03 12:55:48,687:INFO:          deepchecks: Not installed
+2024-10-03 12:55:48,687:INFO:             xgboost: Not installed
+2024-10-03 12:55:48,687:INFO:            catboost: Not installed
+2024-10-03 12:55:48,687:INFO:              kmodes: Not installed
+2024-10-03 12:55:48,687:INFO:             mlxtend: Not installed
+2024-10-03 12:55:48,687:INFO:       statsforecast: Not installed
+2024-10-03 12:55:48,688:INFO:        tune_sklearn: Not installed
+2024-10-03 12:55:48,688:INFO:                 ray: Not installed
+2024-10-03 12:55:48,688:INFO:            hyperopt: Not installed
+2024-10-03 12:55:48,688:INFO:              optuna: Not installed
+2024-10-03 12:55:48,688:INFO:               skopt: Not installed
+2024-10-03 12:55:48,688:INFO:              mlflow: Not installed
+2024-10-03 12:55:48,688:INFO:              gradio: Not installed
+2024-10-03 12:55:48,688:INFO:             fastapi: Not installed
+2024-10-03 12:55:48,688:INFO:             uvicorn: Not installed
+2024-10-03 12:55:48,689:INFO:              m2cgen: Not installed
+2024-10-03 12:55:48,689:INFO:           evidently: Not installed
+2024-10-03 12:55:48,689:INFO:               fugue: Not installed
+2024-10-03 12:55:48,689:INFO:           streamlit: 1.34.0
+2024-10-03 12:55:48,689:INFO:             prophet: Not installed
+2024-10-03 12:55:48,689:INFO:None
+2024-10-03 12:55:48,689:INFO:Set up data.
+2024-10-03 12:55:48,744:INFO:Set up folding strategy.
+2024-10-03 12:55:48,744:INFO:Set up train/test split.
+2024-10-03 12:55:48,744:INFO:Set up data.
+2024-10-03 12:59:37,568:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 12:59:37,574:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 12:59:37,579:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,559:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,565:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,569:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,743:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,752:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:00:36,755:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-03 13:02:28,570:INFO:PyCaret ClassificationExperiment
+2024-10-03 13:02:28,570:INFO:Logging name: clf-default-name
+2024-10-03 13:02:28,571:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 13:02:28,571:INFO:version 3.3.2
+2024-10-03 13:02:28,571:INFO:Initializing setup()
+2024-10-03 13:02:28,571:INFO:self.USI: e580
+2024-10-03 13:02:28,571:INFO:self._variable_keys: {'_ml_usecase', 'data', 'fold_generator', 'fold_groups_param', 'X', 'exp_id', 'y', 'seed', 'gpu_n_jobs_param', 'y_train', 'gpu_param', 'idx', 'n_jobs_param', 'log_plots_param', 'fix_imbalance', 'is_multiclass', '_available_plots', 'fold_shuffle_param', 'memory', 'X_train', 'y_test', 'exp_name_log', 'html_param', 'USI', 'target_param', 'logging_param', 'X_test', 'pipeline'}
+2024-10-03 13:02:28,572:INFO:Checking environment
+2024-10-03 13:02:28,572:INFO:python_version: 3.11.5
+2024-10-03 13:02:28,572:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 13:02:28,572:INFO:machine: AMD64
+2024-10-03 13:02:28,572:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 13:02:28,584:INFO:Memory: svmem(total=8358518784, available=701792256, percent=91.6, used=7656726528, free=701792256)
+2024-10-03 13:02:28,584:INFO:Physical Core: 4
+2024-10-03 13:02:28,584:INFO:Logical Core: 8
+2024-10-03 13:02:28,584:INFO:Checking libraries
+2024-10-03 13:02:28,585:INFO:System:
+2024-10-03 13:02:28,585:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 13:02:28,585:INFO:executable: c:\Python311\python.exe
+2024-10-03 13:02:28,585:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 13:02:28,586:INFO:PyCaret required dependencies:
+2024-10-03 13:02:28,603:INFO:                 pip: 23.2.1
+2024-10-03 13:02:28,604:INFO:          setuptools: 65.5.0
+2024-10-03 13:02:28,604:INFO:             pycaret: 3.3.2
+2024-10-03 13:02:28,604:INFO:             IPython: 8.20.0
+2024-10-03 13:02:28,605:INFO:          ipywidgets: 8.1.1
+2024-10-03 13:02:28,605:INFO:                tqdm: 4.66.5
+2024-10-03 13:02:28,605:INFO:               numpy: 1.26.2
+2024-10-03 13:02:28,605:INFO:              pandas: 2.1.4
+2024-10-03 13:02:28,606:INFO:              jinja2: 3.1.3
+2024-10-03 13:02:28,606:INFO:               scipy: 1.11.4
+2024-10-03 13:02:28,606:INFO:              joblib: 1.3.2
+2024-10-03 13:02:28,606:INFO:             sklearn: 1.4.1.post1
+2024-10-03 13:02:28,606:INFO:                pyod: 2.0.2
+2024-10-03 13:02:28,606:INFO:            imblearn: 0.12.3
+2024-10-03 13:02:28,606:INFO:   category_encoders: 2.6.4
+2024-10-03 13:02:28,606:INFO:            lightgbm: 4.5.0
+2024-10-03 13:02:28,606:INFO:               numba: 0.60.0
+2024-10-03 13:02:28,607:INFO:            requests: 2.31.0
+2024-10-03 13:02:28,607:INFO:          matplotlib: 3.7.5
+2024-10-03 13:02:28,607:INFO:          scikitplot: 0.3.7
+2024-10-03 13:02:28,607:INFO:         yellowbrick: 1.5
+2024-10-03 13:02:28,607:INFO:              plotly: 5.22.0
+2024-10-03 13:02:28,607:INFO:    plotly-resampler: Not installed
+2024-10-03 13:02:28,607:INFO:             kaleido: 0.2.1
+2024-10-03 13:02:28,608:INFO:           schemdraw: 0.15
+2024-10-03 13:02:28,608:INFO:         statsmodels: 0.14.3
+2024-10-03 13:02:28,608:INFO:              sktime: 0.26.0
+2024-10-03 13:02:28,608:INFO:               tbats: 1.1.3
+2024-10-03 13:02:28,608:INFO:            pmdarima: 2.0.4
+2024-10-03 13:02:28,608:INFO:              psutil: 5.9.8
+2024-10-03 13:02:28,608:INFO:          markupsafe: 2.1.4
+2024-10-03 13:02:28,608:INFO:             pickle5: Not installed
+2024-10-03 13:02:28,608:INFO:         cloudpickle: 3.0.0
+2024-10-03 13:02:28,609:INFO:         deprecation: 2.1.0
+2024-10-03 13:02:28,609:INFO:              xxhash: 3.5.0
+2024-10-03 13:02:28,609:INFO:           wurlitzer: Not installed
+2024-10-03 13:02:28,609:INFO:PyCaret optional dependencies:
+2024-10-03 13:02:28,609:INFO:                shap: Not installed
+2024-10-03 13:02:28,609:INFO:           interpret: Not installed
+2024-10-03 13:02:28,609:INFO:                umap: Not installed
+2024-10-03 13:02:28,609:INFO:     ydata_profiling: Not installed
+2024-10-03 13:02:28,610:INFO:  explainerdashboard: Not installed
+2024-10-03 13:02:28,610:INFO:             autoviz: Not installed
+2024-10-03 13:02:28,610:INFO:           fairlearn: Not installed
+2024-10-03 13:02:28,610:INFO:          deepchecks: Not installed
+2024-10-03 13:02:28,610:INFO:             xgboost: Not installed
+2024-10-03 13:02:28,610:INFO:            catboost: Not installed
+2024-10-03 13:02:28,610:INFO:              kmodes: Not installed
+2024-10-03 13:02:28,610:INFO:             mlxtend: Not installed
+2024-10-03 13:02:28,610:INFO:       statsforecast: Not installed
+2024-10-03 13:02:28,610:INFO:        tune_sklearn: Not installed
+2024-10-03 13:02:28,610:INFO:                 ray: Not installed
+2024-10-03 13:02:28,611:INFO:            hyperopt: Not installed
+2024-10-03 13:02:28,611:INFO:              optuna: Not installed
+2024-10-03 13:02:28,611:INFO:               skopt: Not installed
+2024-10-03 13:02:28,611:INFO:              mlflow: Not installed
+2024-10-03 13:02:28,611:INFO:              gradio: Not installed
+2024-10-03 13:02:28,611:INFO:             fastapi: Not installed
+2024-10-03 13:02:28,611:INFO:             uvicorn: Not installed
+2024-10-03 13:02:28,611:INFO:              m2cgen: Not installed
+2024-10-03 13:02:28,611:INFO:           evidently: Not installed
+2024-10-03 13:02:28,611:INFO:               fugue: Not installed
+2024-10-03 13:02:28,611:INFO:           streamlit: 1.34.0
+2024-10-03 13:02:28,611:INFO:             prophet: Not installed
+2024-10-03 13:02:28,611:INFO:None
+2024-10-03 13:02:28,624:INFO:Set up data.
+2024-10-03 13:02:28,744:INFO:Set up folding strategy.
+2024-10-03 13:02:28,745:INFO:Set up train/test split.
+2024-10-03 13:02:28,745:INFO:Set up data.
+2024-10-03 13:06:43,904:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 13:06:44,683:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 13:06:45,536:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-03 13:06:46,799:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\3361731304.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Inflight entertainment", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0, 0])
+
+2024-10-03 13:06:47,626:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_17800\3361731304.py:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Leg room service", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[1, 0])
+
+2024-10-03 13:06:52,148:INFO:PyCaret ClassificationExperiment
+2024-10-03 13:06:52,148:INFO:Logging name: clf-default-name
+2024-10-03 13:06:52,148:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-03 13:06:52,148:INFO:version 3.3.2
+2024-10-03 13:06:52,148:INFO:Initializing setup()
+2024-10-03 13:06:52,148:INFO:self.USI: d9fa
+2024-10-03 13:06:52,149:INFO:self._variable_keys: {'_ml_usecase', 'data', 'fold_generator', 'fold_groups_param', 'X', 'exp_id', 'y', 'seed', 'gpu_n_jobs_param', 'y_train', 'gpu_param', 'idx', 'n_jobs_param', 'log_plots_param', 'fix_imbalance', 'is_multiclass', '_available_plots', 'fold_shuffle_param', 'memory', 'X_train', 'y_test', 'exp_name_log', 'html_param', 'USI', 'target_param', 'logging_param', 'X_test', 'pipeline'}
+2024-10-03 13:06:52,149:INFO:Checking environment
+2024-10-03 13:06:52,149:INFO:python_version: 3.11.5
+2024-10-03 13:06:52,149:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-03 13:06:52,149:INFO:machine: AMD64
+2024-10-03 13:06:52,149:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-03 13:06:52,157:INFO:Memory: svmem(total=8358518784, available=637341696, percent=92.4, used=7721177088, free=637341696)
+2024-10-03 13:06:52,157:INFO:Physical Core: 4
+2024-10-03 13:06:52,157:INFO:Logical Core: 8
+2024-10-03 13:06:52,157:INFO:Checking libraries
+2024-10-03 13:06:52,157:INFO:System:
+2024-10-03 13:06:52,157:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-03 13:06:52,158:INFO:executable: c:\Python311\python.exe
+2024-10-03 13:06:52,158:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-03 13:06:52,158:INFO:PyCaret required dependencies:
+2024-10-03 13:06:52,158:INFO:                 pip: 23.2.1
+2024-10-03 13:06:52,158:INFO:          setuptools: 65.5.0
+2024-10-03 13:06:52,159:INFO:             pycaret: 3.3.2
+2024-10-03 13:06:52,159:INFO:             IPython: 8.20.0
+2024-10-03 13:06:52,159:INFO:          ipywidgets: 8.1.1
+2024-10-03 13:06:52,159:INFO:                tqdm: 4.66.5
+2024-10-03 13:06:52,159:INFO:               numpy: 1.26.2
+2024-10-03 13:06:52,159:INFO:              pandas: 2.1.4
+2024-10-03 13:06:52,159:INFO:              jinja2: 3.1.3
+2024-10-03 13:06:52,160:INFO:               scipy: 1.11.4
+2024-10-03 13:06:52,160:INFO:              joblib: 1.3.2
+2024-10-03 13:06:52,160:INFO:             sklearn: 1.4.1.post1
+2024-10-03 13:06:52,160:INFO:                pyod: 2.0.2
+2024-10-03 13:06:52,160:INFO:            imblearn: 0.12.3
+2024-10-03 13:06:52,160:INFO:   category_encoders: 2.6.4
+2024-10-03 13:06:52,161:INFO:            lightgbm: 4.5.0
+2024-10-03 13:06:52,161:INFO:               numba: 0.60.0
+2024-10-03 13:06:52,161:INFO:            requests: 2.31.0
+2024-10-03 13:06:52,161:INFO:          matplotlib: 3.7.5
+2024-10-03 13:06:52,161:INFO:          scikitplot: 0.3.7
+2024-10-03 13:06:52,161:INFO:         yellowbrick: 1.5
+2024-10-03 13:06:52,161:INFO:              plotly: 5.22.0
+2024-10-03 13:06:52,161:INFO:    plotly-resampler: Not installed
+2024-10-03 13:06:52,161:INFO:             kaleido: 0.2.1
+2024-10-03 13:06:52,162:INFO:           schemdraw: 0.15
+2024-10-03 13:06:52,162:INFO:         statsmodels: 0.14.3
+2024-10-03 13:06:52,162:INFO:              sktime: 0.26.0
+2024-10-03 13:06:52,162:INFO:               tbats: 1.1.3
+2024-10-03 13:06:52,162:INFO:            pmdarima: 2.0.4
+2024-10-03 13:06:52,162:INFO:              psutil: 5.9.8
+2024-10-03 13:06:52,162:INFO:          markupsafe: 2.1.4
+2024-10-03 13:06:52,162:INFO:             pickle5: Not installed
+2024-10-03 13:06:52,163:INFO:         cloudpickle: 3.0.0
+2024-10-03 13:06:52,163:INFO:         deprecation: 2.1.0
+2024-10-03 13:06:52,163:INFO:              xxhash: 3.5.0
+2024-10-03 13:06:52,163:INFO:           wurlitzer: Not installed
+2024-10-03 13:06:52,163:INFO:PyCaret optional dependencies:
+2024-10-03 13:06:52,163:INFO:                shap: Not installed
+2024-10-03 13:06:52,163:INFO:           interpret: Not installed
+2024-10-03 13:06:52,163:INFO:                umap: Not installed
+2024-10-03 13:06:52,164:INFO:     ydata_profiling: Not installed
+2024-10-03 13:06:52,164:INFO:  explainerdashboard: Not installed
+2024-10-03 13:06:52,164:INFO:             autoviz: Not installed
+2024-10-03 13:06:52,164:INFO:           fairlearn: Not installed
+2024-10-03 13:06:52,164:INFO:          deepchecks: Not installed
+2024-10-03 13:06:52,164:INFO:             xgboost: Not installed
+2024-10-03 13:06:52,164:INFO:            catboost: Not installed
+2024-10-03 13:06:52,164:INFO:              kmodes: Not installed
+2024-10-03 13:06:52,164:INFO:             mlxtend: Not installed
+2024-10-03 13:06:52,164:INFO:       statsforecast: Not installed
+2024-10-03 13:06:52,164:INFO:        tune_sklearn: Not installed
+2024-10-03 13:06:52,164:INFO:                 ray: Not installed
+2024-10-03 13:06:52,164:INFO:            hyperopt: Not installed
+2024-10-03 13:06:52,165:INFO:              optuna: Not installed
+2024-10-03 13:06:52,165:INFO:               skopt: Not installed
+2024-10-03 13:06:52,165:INFO:              mlflow: Not installed
+2024-10-03 13:06:52,165:INFO:              gradio: Not installed
+2024-10-03 13:06:52,165:INFO:             fastapi: Not installed
+2024-10-03 13:06:52,165:INFO:             uvicorn: Not installed
+2024-10-03 13:06:52,166:INFO:              m2cgen: Not installed
+2024-10-03 13:06:52,166:INFO:           evidently: Not installed
+2024-10-03 13:06:52,166:INFO:               fugue: Not installed
+2024-10-03 13:06:52,166:INFO:           streamlit: 1.34.0
+2024-10-03 13:06:52,166:INFO:             prophet: Not installed
+2024-10-03 13:06:52,166:INFO:None
+2024-10-03 13:06:52,166:INFO:Set up data.
+2024-10-03 13:06:52,251:INFO:Set up folding strategy.
+2024-10-03 13:06:52,251:INFO:Set up train/test split.
+2024-10-03 13:06:52,251:INFO:Set up data.
+2024-10-04 00:29:42,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-04 00:29:42,294:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-04 00:29:42,294:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-04 00:29:42,294:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-04 00:30:39,702:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_10832\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-04 00:30:41,489:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_10832\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-04 00:30:42,919:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_10832\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-04 00:30:44,828:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_10832\3361731304.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Inflight entertainment", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0, 0])
+
+2024-10-04 00:30:46,147:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_10832\3361731304.py:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Leg room service", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[1, 0])
+
+2024-10-04 00:30:54,738:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:30:54,751:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:30:54,757:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:30:54,983:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:30:54,995:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:30:55,001:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-04 00:35:20,467:INFO:PyCaret ClassificationExperiment
+2024-10-04 00:35:20,467:INFO:Logging name: clf-default-name
+2024-10-04 00:35:20,468:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-10-04 00:35:20,468:INFO:version 3.3.2
+2024-10-04 00:35:20,468:INFO:Initializing setup()
+2024-10-04 00:35:20,468:INFO:self.USI: f8b6
+2024-10-04 00:35:20,469:INFO:self._variable_keys: {'pipeline', 'y_train', 'X', 'logging_param', 'is_multiclass', 'idx', 'data', 'gpu_param', 'USI', '_available_plots', 'memory', 'gpu_n_jobs_param', 'y', 'fold_groups_param', 'X_train', 'fold_shuffle_param', 'n_jobs_param', 'y_test', 'html_param', '_ml_usecase', 'target_param', 'seed', 'fold_generator', 'X_test', 'exp_id', 'log_plots_param', 'exp_name_log', 'fix_imbalance'}
+2024-10-04 00:35:20,471:INFO:Checking environment
+2024-10-04 00:35:20,473:INFO:python_version: 3.11.5
+2024-10-04 00:35:20,473:INFO:python_build: ('tags/v3.11.5:cce6ba9', 'Aug 24 2023 14:38:34')
+2024-10-04 00:35:20,474:INFO:machine: AMD64
+2024-10-04 00:35:20,475:INFO:platform: Windows-10-10.0.22631-SP0
+2024-10-04 00:35:20,484:INFO:Memory: svmem(total=8358518784, available=828293120, percent=90.1, used=7530225664, free=828293120)
+2024-10-04 00:35:20,485:INFO:Physical Core: 4
+2024-10-04 00:35:20,485:INFO:Logical Core: 8
+2024-10-04 00:35:20,486:INFO:Checking libraries
+2024-10-04 00:35:20,487:INFO:System:
+2024-10-04 00:35:20,489:INFO:    python: 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]
+2024-10-04 00:35:20,489:INFO:executable: c:\Python311\python.exe
+2024-10-04 00:35:20,489:INFO:   machine: Windows-10-10.0.22631-SP0
+2024-10-04 00:35:20,489:INFO:PyCaret required dependencies:
+2024-10-04 00:35:20,881:INFO:                 pip: 23.2.1
+2024-10-04 00:35:20,881:INFO:          setuptools: 65.5.0
+2024-10-04 00:35:20,881:INFO:             pycaret: 3.3.2
+2024-10-04 00:35:20,881:INFO:             IPython: 8.20.0
+2024-10-04 00:35:20,881:INFO:          ipywidgets: 8.1.1
+2024-10-04 00:35:20,881:INFO:                tqdm: 4.66.5
+2024-10-04 00:35:20,882:INFO:               numpy: 1.26.2
+2024-10-04 00:35:20,882:INFO:              pandas: 2.1.4
+2024-10-04 00:35:20,882:INFO:              jinja2: 3.1.3
+2024-10-04 00:35:20,882:INFO:               scipy: 1.11.4
+2024-10-04 00:35:20,882:INFO:              joblib: 1.3.2
+2024-10-04 00:35:20,882:INFO:             sklearn: 1.4.1.post1
+2024-10-04 00:35:20,882:INFO:                pyod: 2.0.2
+2024-10-04 00:35:20,882:INFO:            imblearn: 0.12.3
+2024-10-04 00:35:20,882:INFO:   category_encoders: 2.6.4
+2024-10-04 00:35:20,882:INFO:            lightgbm: 4.5.0
+2024-10-04 00:35:20,882:INFO:               numba: 0.60.0
+2024-10-04 00:35:20,882:INFO:            requests: 2.31.0
+2024-10-04 00:35:20,883:INFO:          matplotlib: 3.7.5
+2024-10-04 00:35:20,883:INFO:          scikitplot: 0.3.7
+2024-10-04 00:35:20,883:INFO:         yellowbrick: 1.5
+2024-10-04 00:35:20,883:INFO:              plotly: 5.22.0
+2024-10-04 00:35:20,883:INFO:    plotly-resampler: Not installed
+2024-10-04 00:35:20,883:INFO:             kaleido: 0.2.1
+2024-10-04 00:35:20,883:INFO:           schemdraw: 0.15
+2024-10-04 00:35:20,883:INFO:         statsmodels: 0.14.3
+2024-10-04 00:35:20,883:INFO:              sktime: 0.26.0
+2024-10-04 00:35:20,883:INFO:               tbats: 1.1.3
+2024-10-04 00:35:20,883:INFO:            pmdarima: 2.0.4
+2024-10-04 00:35:20,883:INFO:              psutil: 5.9.8
+2024-10-04 00:35:20,884:INFO:          markupsafe: 2.1.4
+2024-10-04 00:35:20,884:INFO:             pickle5: Not installed
+2024-10-04 00:35:20,884:INFO:         cloudpickle: 3.0.0
+2024-10-04 00:35:20,884:INFO:         deprecation: 2.1.0
+2024-10-04 00:35:20,884:INFO:              xxhash: 3.5.0
+2024-10-04 00:35:20,884:INFO:           wurlitzer: Not installed
+2024-10-04 00:35:20,885:INFO:PyCaret optional dependencies:
+2024-10-04 00:35:20,915:INFO:                shap: Not installed
+2024-10-04 00:35:20,915:INFO:           interpret: Not installed
+2024-10-04 00:35:20,915:INFO:                umap: Not installed
+2024-10-04 00:35:20,915:INFO:     ydata_profiling: Not installed
+2024-10-04 00:35:20,916:INFO:  explainerdashboard: Not installed
+2024-10-04 00:35:20,916:INFO:             autoviz: Not installed
+2024-10-04 00:35:20,916:INFO:           fairlearn: Not installed
+2024-10-04 00:35:20,916:INFO:          deepchecks: Not installed
+2024-10-04 00:35:20,916:INFO:             xgboost: Not installed
+2024-10-04 00:35:20,916:INFO:            catboost: Not installed
+2024-10-04 00:35:20,916:INFO:              kmodes: Not installed
+2024-10-04 00:35:20,916:INFO:             mlxtend: Not installed
+2024-10-04 00:35:20,916:INFO:       statsforecast: Not installed
+2024-10-04 00:35:20,916:INFO:        tune_sklearn: Not installed
+2024-10-04 00:35:20,916:INFO:                 ray: Not installed
+2024-10-04 00:35:20,916:INFO:            hyperopt: Not installed
+2024-10-04 00:35:20,916:INFO:              optuna: Not installed
+2024-10-04 00:35:20,916:INFO:               skopt: Not installed
+2024-10-04 00:35:20,916:INFO:              mlflow: Not installed
+2024-10-04 00:35:20,916:INFO:              gradio: Not installed
+2024-10-04 00:35:20,916:INFO:             fastapi: Not installed
+2024-10-04 00:35:20,916:INFO:             uvicorn: Not installed
+2024-10-04 00:35:20,916:INFO:              m2cgen: Not installed
+2024-10-04 00:35:20,916:INFO:           evidently: Not installed
+2024-10-04 00:35:20,916:INFO:               fugue: Not installed
+2024-10-04 00:35:20,916:INFO:           streamlit: 1.34.0
+2024-10-04 00:35:20,916:INFO:             prophet: Not installed
+2024-10-04 00:35:20,916:INFO:None
+2024-10-04 00:35:20,917:INFO:Set up data.
+2024-10-04 00:35:21,043:INFO:Set up folding strategy.
+2024-10-04 00:35:21,044:INFO:Set up train/test split.
+2024-10-04 00:35:21,044:INFO:Set up data.
+2024-10-05 21:11:52,288:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-05 21:11:52,289:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-05 21:11:52,289:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-05 21:11:52,289:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-10-05 21:12:54,376:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_22608\1247136427.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Customer Type", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-05 21:12:55,552:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_22608\1936182597.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Age", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-05 21:12:56,724:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_22608\833066174.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Class", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0])
+
+2024-10-05 21:12:58,557:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_22608\3361731304.py:2: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Inflight entertainment", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[0, 0])
+
+2024-10-05 21:12:59,756:WARNING:C:\Users\hrsih\AppData\Local\Temp\ipykernel_22608\3361731304.py:4: FutureWarning: 
+
+Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
+
+  sns.boxplot(x="Leg room service", y="Flight Distance", palette="YlOrBr", data=train, ax=ax[1, 0])
+
+2024-10-05 21:13:07,382:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-05 21:13:07,396:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-05 21:13:07,405:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-05 21:13:07,653:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-05 21:13:07,664:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-10-05 21:13:07,668:WARNING:c:\Python311\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
