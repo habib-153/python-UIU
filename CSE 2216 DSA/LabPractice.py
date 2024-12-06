@@ -36,6 +36,26 @@ class LinkedList:
         while prev.next.data != key:
             prev = prev.next
         prev.next = prev.next.next
+    def sort_list(self):
+        current = self.head
+        index = Node(None)
+        if self.head is None:
+            return
+        else:
+            while current.next != None:
+                index = current.next
+                while index != None:
+                    if current.data > index.data:
+                        current.data, index.data = index.data, current.data
+                    index = index.next
+                current = current.next
+    def search(self, key):
+        current = self.head
+        while current != None:
+            if key == current.data:
+                return True
+            current = current.next
+        return False
         
 
 linked1 = LinkedList()
@@ -48,6 +68,8 @@ element1.next = element2
 element2.next = element3
 element3.next = element4
 
-linked1.delete_node(30)
+# linked1.delete_node(30)
 linked1.insert_after(element2, 28)
+linked1.sort_list()
+print("Found") if linked1.search(None) else print("Not Found")
 linked1.traverse()
