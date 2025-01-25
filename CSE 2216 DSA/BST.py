@@ -47,6 +47,40 @@ def minValueNode(node):
 
     return current
 
+def deleteNode(root, key):
+    if root is None:
+        return root
+    if root.data > key:
+        root.left = deleteNode(root.left, key)
+    elif root.data < key:
+        root.right =  deleteNode(root.right, key)
+    else:
+        if root.left is None:
+            temp = root.right
+            root = None
+            return temp
+        elif root.right is None:
+            temp = root.left
+            root = None
+            return temp
+        temp = minValueNode(root.right)
+        root.key = temp.key
+        root.right = deleteNode(root.right, temp.key)
+    return root
+
+def levelOrder(root):
+    if root is None:
+        return f"Tree is empty"
+    else:
+        q = []
+        q.append(root)
+        while len(q) > 0:
+            print(q[0].data, end=' ')
+            node = q.pop(0)
+            if node.left is not None:
+                q.append(node.left)
+            if node.right is not None:
+                q.append(node.right)
 
 root = None
 root = insert(root, 8)
@@ -60,6 +94,9 @@ root = insert(root, 4)
 
 inOrder(root)
 print()
+deleteNode(root, 1)
 postOrder(root)
 print()
 preOrder(root)
+print()
+levelOrder(root)
