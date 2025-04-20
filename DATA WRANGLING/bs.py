@@ -2,19 +2,67 @@ import requests
 from bs4 import BeautifulSoup
 
 
-import requests
-from bs4 import BeautifulSoup
-url = 'http://quotes.toscrape.com/'
+html_file = open('index.html', 'r')
+content = html_file.read()
+soup = BeautifulSoup(content, 'lxml')
+# print(soup.prettify())
+
+titles = soup.find_all('h5', class_="card-title")
+
+# print(titles)
+
+anchor = soup.find_all('a', class_="btn btn-primary")
+prices = []
+
+for i in anchor:
+    prices.append(i.text.split()[-1])
+
+# print(anchor)
+
+for i in anchor:
+    print(i.get('class'))
 
 
-response = requests.get(url)
-# print(response.text)
-soup_content = BeautifulSoup(response.text, 'lxml')
-# print(soup_content.prettify())
+for i in range(len(titles)):
+    print(f"Course : {titles[i].text} , Price : {prices[i]}")
 
-span = soup_content.find("footer").find('p', class_="copyright")
 
-print(span)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# import requests
+# from bs4 import BeautifulSoup
+# url = 'http://quotes.toscrape.com/'
+
+# html_file = open('home.html', 'r')
+# content = html_file.read()
+# soup = BeautifulSoup(content, 'lxml')
+# print(soup.prettify())
+
+# response = requests.get(url)
+# # print(response.text)
+# soup_content = BeautifulSoup(response.text, 'lxml')
+# # print(soup_content.prettify())
+
+# span = soup_content.find("div").find('span', class_="tag-item")
+
+# print(span)
 
 
 # div, h2, h3, p, span, footer, body, head, a , img
@@ -34,7 +82,6 @@ print(span)
 
 
 # # url = "https://api.openweathermap.org/data/2.5/weather"
-# # params = {"q": "Singapore", "appid": "f2cf9344dc6b01a2a3723979a6bd1f73"}
 # # # Make GET request
 # # response = requests.get(url, params=params)
 # # # Convert response to JSON

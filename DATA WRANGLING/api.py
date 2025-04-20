@@ -3,13 +3,14 @@ from bs4 import BeautifulSoup
 url = 'http://quotes.toscrape.com/'
 
 response = requests.get(url)
-# print(response.text)
-soup_content = BeautifulSoup(response.text, 'lxml')
-# print(soup_content.prettify())
+print(response.text)
+# soup_content = BeautifulSoup(response.text, 'lxml')
+# print(soup_content.text)
 
-span = soup_content.find("footer").find('p', class_="copyright")
+# span = soup_content.find("footer").find('p', class_="copyright")
+# span = soup_content.find('p', class_="container")
 
-print(span)
+# print(span)
 
 
 # div, h2, h3, p, span, footer, body, head, a , img

@@ -24,6 +24,7 @@ for entry in data.get('data', []):
         'PhoneNumber': entry.get('PhoneNumber', ''),
         'Department': entry.get('Department', ''),
         'University': entry.get('EventSpecificData', {}).get('university', ''),
+        'PersonalEmail': entry.get('EventSpecificData', {}).get('personalEmail', ''),
         'TransactionID': entry.get('PaymentTransactionID', ''),
         'PaymentMethod': entry.get('PaymentMethod', ''),
         'PaymentAmount': entry.get('PaymentAmount', 0),
@@ -38,7 +39,7 @@ if registrations:
     os.makedirs('output', exist_ok=True)
 
     # Export to Excel
-    excel_path = './transaction_ids.xlsx'
+    excel_path = './DSC_Event.xlsx'
     df.to_excel(excel_path, index=False)
     print(f"Data exported successfully to {excel_path}")
 else:
